@@ -156,6 +156,8 @@ common:
     description: 48GB Ada Lovelace inference GPU, listed at $0.79/hr.
   - name: NVIDIA RTX 4090
     description: 24GB consumer GPU, listed at $0.34/hr.
+- type: LLMsTxt
+  url: https://docs.runpod.io/llms.txt
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
