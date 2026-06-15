@@ -1,9 +1,6 @@
 aid: runpod
 name: RunPod
-description: RunPod is a managed GPU cloud and serverless inference platform offering on-demand and persistent
-  GPU Pods, autoscaling Serverless endpoints, network volumes, container templates, and a REST + GraphQL control
-  plane for provisioning H100, H200, B200, A100, L40S, and consumer RTX GPUs. RunPod targets AI/ML developers
-  who need flexible, per-second-billed GPU compute for training, fine-tuning, and inference workloads.
+description: RunPod is a managed GPU cloud and serverless inference platform offering on-demand and persistent GPU Pods, autoscaling Serverless endpoints, network volumes, container templates, and a REST + GraphQL control plane for provisioning H100, H200, B200, A100, L40S, and consumer RTX GPUs. RunPod targets AI/ML developers who need flexible, per-second-billed GPU compute for training, fine-tuning, and inference workloads.
 image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
 url: https://raw.githubusercontent.com/api-evangelist/runpod/refs/heads/main/apis.yml
 created: '2026-05-23'
@@ -23,9 +20,7 @@ tags:
 apis:
 - aid: runpod:rest-api
   name: RunPod REST API
-  description: The RunPod REST API programmatically manages Pods, Serverless endpoints, network volumes,
-    templates, container registry auth, and billing. The API is the primary control plane for provisioning
-    and operating GPU compute on RunPod.
+  description: The RunPod REST API programmatically manages Pods, Serverless endpoints, network volumes, templates, container registry auth, and billing. The API is the primary control plane for provisioning and operating GPU compute on RunPod.
   humanURL: https://docs.runpod.io/api-reference/overview
   baseURL: https://rest.runpod.io/v1
   tags:
@@ -44,9 +39,7 @@ apis:
     url: https://rest.runpod.io/v1/openapi.json
 - aid: runpod:graphql-api
   name: RunPod GraphQL API
-  description: The RunPod GraphQL API provides programmatic access to Pods, templates, and Serverless endpoints
-    via GraphQL queries and mutations. It is the original control-plane interface and is still supported
-    alongside the REST API.
+  description: The RunPod GraphQL API provides programmatic access to Pods, templates, and Serverless endpoints via GraphQL queries and mutations. It is the original control-plane interface and is still supported alongside the REST API.
   humanURL: https://docs.runpod.io/sdks/graphql/configurations
   baseURL: https://api.runpod.io/graphql
   tags:
@@ -59,11 +52,11 @@ apis:
   properties:
   - type: Documentation
     url: https://docs.runpod.io/sdks/graphql/configurations
+  - url: graphql/runpod-graphql.md
+    type: GraphQL
 - aid: runpod:serverless
   name: RunPod Serverless
-  description: RunPod Serverless provides pay-as-you-go inference endpoints with autoscaling workers, queue-based
-    and load-balanced endpoint types, FlashBoot cold-start optimization, and per-second billing. Each endpoint
-    exposes a URL that accepts request payloads for AI model inference and compute-intensive workloads.
+  description: RunPod Serverless provides pay-as-you-go inference endpoints with autoscaling workers, queue-based and load-balanced endpoint types, FlashBoot cold-start optimization, and per-second billing. Each endpoint exposes a URL that accepts request payloads for AI model inference and compute-intensive workloads.
   humanURL: https://docs.runpod.io/serverless/overview
   baseURL: https://api.runpod.ai/v2
   tags:
@@ -117,17 +110,13 @@ common:
 - type: Features
   data:
   - name: GPU Pods
-    description: Persistent on-demand GPU instances with SSH, JupyterLab, and VSCode access, billed per-second
-      across a wide range of NVIDIA SKUs.
+    description: Persistent on-demand GPU instances with SSH, JupyterLab, and VSCode access, billed per-second across a wide range of NVIDIA SKUs.
   - name: Serverless Endpoints
-    description: Autoscaling, queue-based inference endpoints with FlashBoot cold-start optimization and
-      pay-per-request billing.
+    description: Autoscaling, queue-based inference endpoints with FlashBoot cold-start optimization and pay-per-request billing.
   - name: Network Volumes
-    description: Persistent, portable storage that can be attached to Pods and Serverless workers across
-      datacenters.
+    description: Persistent, portable storage that can be attached to Pods and Serverless workers across datacenters.
   - name: Templates
-    description: Reusable Pod and endpoint configurations bundling container images, hardware specs, and
-      network settings.
+    description: Reusable Pod and endpoint configurations bundling container images, hardware specs, and network settings.
   - name: vLLM Quick Deploy
     description: Pre-built Serverless workers for deploying open-source LLMs with vLLM in a single click.
 - type: Integrations

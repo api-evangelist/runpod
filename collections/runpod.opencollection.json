@@ -1,0 +1,577 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "Runpod REST API",
+    "version": "1.0.0"
+  },
+  "request": {
+    "auth": {
+      "type": "bearer",
+      "token": "{{bearerToken}}"
+    }
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Retrieve the OpenAPI specification",
+        "type": "http"
+      },
+      "http": {
+        "method": "GET",
+        "url": "https://rest.runpod.io/v1/openapi.json"
+      },
+      "docs": "Retrieve the OpenAPI specification"
+    },
+    {
+      "info": {
+        "name": "Retrieve the interactive API documentation",
+        "type": "http"
+      },
+      "http": {
+        "method": "GET",
+        "url": "https://rest.runpod.io/v1/docs"
+      },
+      "docs": "Retrieve the interactive API documentation"
+    },
+    {
+      "info": {
+        "name": "List pods",
+        "type": "http"
+      },
+      "http": {
+        "method": "GET",
+        "url": "https://rest.runpod.io/v1/pods"
+      },
+      "docs": "List pods"
+    },
+    {
+      "info": {
+        "name": "Create a pod",
+        "type": "http"
+      },
+      "http": {
+        "method": "POST",
+        "url": "https://rest.runpod.io/v1/pods"
+      },
+      "docs": "Create a pod"
+    },
+    {
+      "info": {
+        "name": "Get a pod",
+        "type": "http"
+      },
+      "http": {
+        "method": "GET",
+        "url": "https://rest.runpod.io/v1/pods/:podId",
+        "params": [
+          {
+            "name": "podId",
+            "value": "",
+            "type": "path"
+          }
+        ]
+      },
+      "docs": "Get a pod"
+    },
+    {
+      "info": {
+        "name": "Update a pod",
+        "type": "http"
+      },
+      "http": {
+        "method": "PATCH",
+        "url": "https://rest.runpod.io/v1/pods/:podId",
+        "params": [
+          {
+            "name": "podId",
+            "value": "",
+            "type": "path"
+          }
+        ]
+      },
+      "docs": "Update a pod"
+    },
+    {
+      "info": {
+        "name": "Delete a pod",
+        "type": "http"
+      },
+      "http": {
+        "method": "DELETE",
+        "url": "https://rest.runpod.io/v1/pods/:podId",
+        "params": [
+          {
+            "name": "podId",
+            "value": "",
+            "type": "path"
+          }
+        ]
+      },
+      "docs": "Delete a pod"
+    },
+    {
+      "info": {
+        "name": "Apply a pod update",
+        "type": "http"
+      },
+      "http": {
+        "method": "POST",
+        "url": "https://rest.runpod.io/v1/pods/:podId/update",
+        "params": [
+          {
+            "name": "podId",
+            "value": "",
+            "type": "path"
+          }
+        ]
+      },
+      "docs": "Apply a pod update"
+    },
+    {
+      "info": {
+        "name": "Start a pod",
+        "type": "http"
+      },
+      "http": {
+        "method": "POST",
+        "url": "https://rest.runpod.io/v1/pods/:podId/start",
+        "params": [
+          {
+            "name": "podId",
+            "value": "",
+            "type": "path"
+          }
+        ]
+      },
+      "docs": "Start a pod"
+    },
+    {
+      "info": {
+        "name": "Stop a pod",
+        "type": "http"
+      },
+      "http": {
+        "method": "POST",
+        "url": "https://rest.runpod.io/v1/pods/:podId/stop",
+        "params": [
+          {
+            "name": "podId",
+            "value": "",
+            "type": "path"
+          }
+        ]
+      },
+      "docs": "Stop a pod"
+    },
+    {
+      "info": {
+        "name": "Reset a pod",
+        "type": "http"
+      },
+      "http": {
+        "method": "POST",
+        "url": "https://rest.runpod.io/v1/pods/:podId/reset",
+        "params": [
+          {
+            "name": "podId",
+            "value": "",
+            "type": "path"
+          }
+        ]
+      },
+      "docs": "Reset a pod"
+    },
+    {
+      "info": {
+        "name": "Restart a pod",
+        "type": "http"
+      },
+      "http": {
+        "method": "POST",
+        "url": "https://rest.runpod.io/v1/pods/:podId/restart",
+        "params": [
+          {
+            "name": "podId",
+            "value": "",
+            "type": "path"
+          }
+        ]
+      },
+      "docs": "Restart a pod"
+    },
+    {
+      "info": {
+        "name": "List serverless endpoints",
+        "type": "http"
+      },
+      "http": {
+        "method": "GET",
+        "url": "https://rest.runpod.io/v1/endpoints"
+      },
+      "docs": "List serverless endpoints"
+    },
+    {
+      "info": {
+        "name": "Create a serverless endpoint",
+        "type": "http"
+      },
+      "http": {
+        "method": "POST",
+        "url": "https://rest.runpod.io/v1/endpoints"
+      },
+      "docs": "Create a serverless endpoint"
+    },
+    {
+      "info": {
+        "name": "Get a serverless endpoint",
+        "type": "http"
+      },
+      "http": {
+        "method": "GET",
+        "url": "https://rest.runpod.io/v1/endpoints/:endpointId",
+        "params": [
+          {
+            "name": "endpointId",
+            "value": "",
+            "type": "path"
+          }
+        ]
+      },
+      "docs": "Get a serverless endpoint"
+    },
+    {
+      "info": {
+        "name": "Update a serverless endpoint",
+        "type": "http"
+      },
+      "http": {
+        "method": "PATCH",
+        "url": "https://rest.runpod.io/v1/endpoints/:endpointId",
+        "params": [
+          {
+            "name": "endpointId",
+            "value": "",
+            "type": "path"
+          }
+        ]
+      },
+      "docs": "Update a serverless endpoint"
+    },
+    {
+      "info": {
+        "name": "Delete a serverless endpoint",
+        "type": "http"
+      },
+      "http": {
+        "method": "DELETE",
+        "url": "https://rest.runpod.io/v1/endpoints/:endpointId",
+        "params": [
+          {
+            "name": "endpointId",
+            "value": "",
+            "type": "path"
+          }
+        ]
+      },
+      "docs": "Delete a serverless endpoint"
+    },
+    {
+      "info": {
+        "name": "Apply an endpoint update",
+        "type": "http"
+      },
+      "http": {
+        "method": "POST",
+        "url": "https://rest.runpod.io/v1/endpoints/:endpointId/update",
+        "params": [
+          {
+            "name": "endpointId",
+            "value": "",
+            "type": "path"
+          }
+        ]
+      },
+      "docs": "Apply an endpoint update"
+    },
+    {
+      "info": {
+        "name": "List templates",
+        "type": "http"
+      },
+      "http": {
+        "method": "GET",
+        "url": "https://rest.runpod.io/v1/templates"
+      },
+      "docs": "List templates"
+    },
+    {
+      "info": {
+        "name": "Create a template",
+        "type": "http"
+      },
+      "http": {
+        "method": "POST",
+        "url": "https://rest.runpod.io/v1/templates"
+      },
+      "docs": "Create a template"
+    },
+    {
+      "info": {
+        "name": "Get a template",
+        "type": "http"
+      },
+      "http": {
+        "method": "GET",
+        "url": "https://rest.runpod.io/v1/templates/:templateId",
+        "params": [
+          {
+            "name": "templateId",
+            "value": "",
+            "type": "path"
+          }
+        ]
+      },
+      "docs": "Get a template"
+    },
+    {
+      "info": {
+        "name": "Update a template",
+        "type": "http"
+      },
+      "http": {
+        "method": "PATCH",
+        "url": "https://rest.runpod.io/v1/templates/:templateId",
+        "params": [
+          {
+            "name": "templateId",
+            "value": "",
+            "type": "path"
+          }
+        ]
+      },
+      "docs": "Update a template"
+    },
+    {
+      "info": {
+        "name": "Delete a template",
+        "type": "http"
+      },
+      "http": {
+        "method": "DELETE",
+        "url": "https://rest.runpod.io/v1/templates/:templateId",
+        "params": [
+          {
+            "name": "templateId",
+            "value": "",
+            "type": "path"
+          }
+        ]
+      },
+      "docs": "Delete a template"
+    },
+    {
+      "info": {
+        "name": "Apply a template update",
+        "type": "http"
+      },
+      "http": {
+        "method": "POST",
+        "url": "https://rest.runpod.io/v1/templates/:templateId/update",
+        "params": [
+          {
+            "name": "templateId",
+            "value": "",
+            "type": "path"
+          }
+        ]
+      },
+      "docs": "Apply a template update"
+    },
+    {
+      "info": {
+        "name": "List network volumes",
+        "type": "http"
+      },
+      "http": {
+        "method": "GET",
+        "url": "https://rest.runpod.io/v1/networkvolumes"
+      },
+      "docs": "List network volumes"
+    },
+    {
+      "info": {
+        "name": "Create a network volume",
+        "type": "http"
+      },
+      "http": {
+        "method": "POST",
+        "url": "https://rest.runpod.io/v1/networkvolumes"
+      },
+      "docs": "Create a network volume"
+    },
+    {
+      "info": {
+        "name": "Get a network volume",
+        "type": "http"
+      },
+      "http": {
+        "method": "GET",
+        "url": "https://rest.runpod.io/v1/networkvolumes/:networkVolumeId",
+        "params": [
+          {
+            "name": "networkVolumeId",
+            "value": "",
+            "type": "path"
+          }
+        ]
+      },
+      "docs": "Get a network volume"
+    },
+    {
+      "info": {
+        "name": "Update a network volume",
+        "type": "http"
+      },
+      "http": {
+        "method": "PATCH",
+        "url": "https://rest.runpod.io/v1/networkvolumes/:networkVolumeId",
+        "params": [
+          {
+            "name": "networkVolumeId",
+            "value": "",
+            "type": "path"
+          }
+        ]
+      },
+      "docs": "Update a network volume"
+    },
+    {
+      "info": {
+        "name": "Delete a network volume",
+        "type": "http"
+      },
+      "http": {
+        "method": "DELETE",
+        "url": "https://rest.runpod.io/v1/networkvolumes/:networkVolumeId",
+        "params": [
+          {
+            "name": "networkVolumeId",
+            "value": "",
+            "type": "path"
+          }
+        ]
+      },
+      "docs": "Delete a network volume"
+    },
+    {
+      "info": {
+        "name": "Apply a network volume update",
+        "type": "http"
+      },
+      "http": {
+        "method": "POST",
+        "url": "https://rest.runpod.io/v1/networkvolumes/:networkVolumeId/update",
+        "params": [
+          {
+            "name": "networkVolumeId",
+            "value": "",
+            "type": "path"
+          }
+        ]
+      },
+      "docs": "Apply a network volume update"
+    },
+    {
+      "info": {
+        "name": "List container registry auth entries",
+        "type": "http"
+      },
+      "http": {
+        "method": "GET",
+        "url": "https://rest.runpod.io/v1/containerregistryauth"
+      },
+      "docs": "List container registry auth entries"
+    },
+    {
+      "info": {
+        "name": "Create container registry auth entry",
+        "type": "http"
+      },
+      "http": {
+        "method": "POST",
+        "url": "https://rest.runpod.io/v1/containerregistryauth"
+      },
+      "docs": "Create container registry auth entry"
+    },
+    {
+      "info": {
+        "name": "Get a container registry auth entry",
+        "type": "http"
+      },
+      "http": {
+        "method": "GET",
+        "url": "https://rest.runpod.io/v1/containerregistryauth/:containerRegistryAuthId",
+        "params": [
+          {
+            "name": "containerRegistryAuthId",
+            "value": "",
+            "type": "path"
+          }
+        ]
+      },
+      "docs": "Get a container registry auth entry"
+    },
+    {
+      "info": {
+        "name": "Delete a container registry auth entry",
+        "type": "http"
+      },
+      "http": {
+        "method": "DELETE",
+        "url": "https://rest.runpod.io/v1/containerregistryauth/:containerRegistryAuthId",
+        "params": [
+          {
+            "name": "containerRegistryAuthId",
+            "value": "",
+            "type": "path"
+          }
+        ]
+      },
+      "docs": "Delete a container registry auth entry"
+    },
+    {
+      "info": {
+        "name": "Retrieve billing data for pods",
+        "type": "http"
+      },
+      "http": {
+        "method": "GET",
+        "url": "https://rest.runpod.io/v1/billing/pods"
+      },
+      "docs": "Retrieve billing data for pods"
+    },
+    {
+      "info": {
+        "name": "Retrieve billing data for serverless endpoints",
+        "type": "http"
+      },
+      "http": {
+        "method": "GET",
+        "url": "https://rest.runpod.io/v1/billing/endpoints"
+      },
+      "docs": "Retrieve billing data for serverless endpoints"
+    },
+    {
+      "info": {
+        "name": "Retrieve billing data for network volumes",
+        "type": "http"
+      },
+      "http": {
+        "method": "GET",
+        "url": "https://rest.runpod.io/v1/billing/networkvolumes"
+      },
+      "docs": "Retrieve billing data for network volumes"
+    }
+  ],
+  "bundled": true
+}
