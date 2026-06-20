@@ -1,7 +1,7 @@
 aid: runpod
 name: RunPod
 description: RunPod is a managed GPU cloud and serverless inference platform offering on-demand and persistent GPU Pods, autoscaling Serverless endpoints, network volumes, container templates, and a REST + GraphQL control plane for provisioning H100, H200, B200, A100, L40S, and consumer RTX GPUs. RunPod targets AI/ML developers who need flexible, per-second-billed GPU compute for training, fine-tuning, and inference workloads.
-image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
 url: https://raw.githubusercontent.com/api-evangelist/runpod/refs/heads/main/apis.yml
 created: '2026-05-23'
 modified: '2026-05-23'
