@@ -2,11 +2,11 @@
   "repo": "runpod",
   "feeds": [
     {
-      "source": "https://www.runpod.io/blog",
+      "source": "https://www.runpod.io/blog/rss.xml",
       "feed_url": "https://www.runpod.io/blog/rss.xml",
       "title": "",
-      "saved": 60,
-      "method": "discovered"
+      "saved": 8,
+      "method": "feed"
     },
     {
       "source": "https://www.runpod.io/pricing",
@@ -16,6 +16,6 @@
       "method": "none"
     }
   ],
-  "post_count": 61,
-  "fetched": "2026-06-14T20:42:17Z"
+  "post_count": 72,
+  "fetched": "2026-06-27T12:03:07Z"
 }

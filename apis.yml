@@ -78,7 +78,7 @@ common:
   url: https://docs.runpod.io
 - type: Portal
   url: https://console.runpod.io
-- type: SignUp
+- type: Signup
   url: https://www.runpod.io/console/signup
 - type: Login
   url: https://www.runpod.io/console/signin
@@ -100,7 +100,7 @@ common:
   url: https://docs.runpod.io/changelog
 - name: RunPod Python SDK
   url: https://github.com/runpod/runpod-python
-  type: SDK
+  type: SDKs
 - name: runpodctl CLI
   url: https://github.com/runpod/runpodctl
   type: CLI
@@ -145,7 +145,7 @@ common:
     description: 48GB Ada Lovelace inference GPU, listed at $0.79/hr.
   - name: NVIDIA RTX 4090
     description: 24GB consumer GPU, listed at $0.34/hr.
-- type: LLMsTxt
+- type: LlmsText
   url: https://docs.runpod.io/llms.txt
 maintainers:
 - FN: Kin Lane
