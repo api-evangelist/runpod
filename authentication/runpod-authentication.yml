@@ -1,0 +1,13 @@
+generated: '2026-07-11'
+method: derived
+source: openapi/runpod-openapi.yml
+summary:
+  types:
+  - http
+schemes:
+- name: bearerAuth
+  type: http
+  scheme: bearer
+  description: Runpod API key supplied as a bearer token.
+  sources:
+  - openapi/runpod-openapi.yml
