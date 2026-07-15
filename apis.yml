@@ -70,6 +70,8 @@ apis:
   - type: Documentation
     url: https://docs.runpod.io/serverless/overview
 common:
+- type: AgenticAccess
+  url: agentic-access/runpod-agentic-access.yml
 - type: TrustCenter
   url: security/runpod-trust-center.yml
 - type: DomainSecurity
