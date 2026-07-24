@@ -1,0 +1,89 @@
+openapi: 3.1.0
+info:
+  title: Runpod REST Billing Endpoints API
+  description: 'Runpod REST API for managing GPU pods, serverless endpoints, templates,
+
+    network volumes, container registry credentials, and billing data.
+
+    '
+  version: 1.0.0
+  contact:
+    name: Runpod API Reference
+    url: https://docs.runpod.io/api-reference/overview
+servers:
+- url: https://rest.runpod.io/v1
+  description: Runpod REST API production
+security:
+- bearerAuth: []
+tags:
+- name: Endpoints
+paths:
+  /endpoints:
+    get:
+      summary: List serverless endpoints
+      operationId: listEndpoints
+      responses:
+        '200':
+          description: List of endpoints
+      tags:
+      - Endpoints
+    post:
+      summary: Create a serverless endpoint
+      operationId: createEndpoint
+      responses:
+        '201':
+          description: Endpoint created
+      tags:
+      - Endpoints
+  /endpoints/{endpointId}:
+    parameters:
+    - in: path
+      name: endpointId
+      required: true
+      schema:
+        type: string
+    get:
+      summary: Get a serverless endpoint
+      operationId: getEndpoint
+      responses:
+        '200':
+          description: Endpoint details
+      tags:
+      - Endpoints
+    patch:
+      summary: Update a serverless endpoint
+      operationId: patchEndpoint
+      responses:
+        '200':
+          description: Endpoint updated
+      tags:
+      - Endpoints
+    delete:
+      summary: Delete a serverless endpoint
+      operationId: deleteEndpoint
+      responses:
+        '204':
+          description: Endpoint deleted
+      tags:
+      - Endpoints
+  /endpoints/{endpointId}/update:
+    post:
+      summary: Apply an endpoint update
+      operationId: updateEndpoint
+      parameters:
+      - in: path
+        name: endpointId
+        required: true
+        schema:
+          type: string
+      responses:
+        '200':
+          description: Endpoint updated
+      tags:
+      - Endpoints
+components:
+  securitySchemes:
+    bearerAuth:
+      type: http
+      scheme: bearer
+      description: Runpod API key supplied as a bearer token.

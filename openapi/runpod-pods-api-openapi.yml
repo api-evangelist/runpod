@@ -1,0 +1,149 @@
+openapi: 3.1.0
+info:
+  title: Runpod REST Billing Pods API
+  description: 'Runpod REST API for managing GPU pods, serverless endpoints, templates,
+
+    network volumes, container registry credentials, and billing data.
+
+    '
+  version: 1.0.0
+  contact:
+    name: Runpod API Reference
+    url: https://docs.runpod.io/api-reference/overview
+servers:
+- url: https://rest.runpod.io/v1
+  description: Runpod REST API production
+security:
+- bearerAuth: []
+tags:
+- name: Pods
+paths:
+  /pods:
+    get:
+      summary: List pods
+      operationId: listPods
+      responses:
+        '200':
+          description: List of pods
+      tags:
+      - Pods
+    post:
+      summary: Create a pod
+      operationId: createPod
+      responses:
+        '201':
+          description: Pod created
+      tags:
+      - Pods
+  /pods/{podId}:
+    parameters:
+    - in: path
+      name: podId
+      required: true
+      schema:
+        type: string
+    get:
+      summary: Get a pod
+      operationId: getPod
+      responses:
+        '200':
+          description: Pod details
+      tags:
+      - Pods
+    patch:
+      summary: Update a pod
+      operationId: patchPod
+      responses:
+        '200':
+          description: Pod updated
+      tags:
+      - Pods
+    delete:
+      summary: Delete a pod
+      operationId: deletePod
+      responses:
+        '204':
+          description: Pod deleted
+      tags:
+      - Pods
+  /pods/{podId}/update:
+    post:
+      summary: Apply a pod update
+      operationId: updatePod
+      parameters:
+      - in: path
+        name: podId
+        required: true
+        schema:
+          type: string
+      responses:
+        '200':
+          description: Pod updated
+      tags:
+      - Pods
+  /pods/{podId}/start:
+    post:
+      summary: Start a pod
+      operationId: startPod
+      parameters:
+      - in: path
+        name: podId
+        required: true
+        schema:
+          type: string
+      responses:
+        '200':
+          description: Pod started
+      tags:
+      - Pods
+  /pods/{podId}/stop:
+    post:
+      summary: Stop a pod
+      operationId: stopPod
+      parameters:
+      - in: path
+        name: podId
+        required: true
+        schema:
+          type: string
+      responses:
+        '200':
+          description: Pod stopped
+      tags:
+      - Pods
+  /pods/{podId}/reset:
+    post:
+      summary: Reset a pod
+      operationId: resetPod
+      parameters:
+      - in: path
+        name: podId
+        required: true
+        schema:
+          type: string
+      responses:
+        '200':
+          description: Pod reset
+      tags:
+      - Pods
+  /pods/{podId}/restart:
+    post:
+      summary: Restart a pod
+      operationId: restartPod
+      parameters:
+      - in: path
+        name: podId
+        required: true
+        schema:
+          type: string
+      responses:
+        '200':
+          description: Pod restarted
+      tags:
+      - Pods
+components:
+  securitySchemes:
+    bearerAuth:
+      type: http
+      scheme: bearer
+      description: Runpod API key supplied as a bearer token.

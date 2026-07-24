@@ -1,0 +1,35 @@
+openapi: 3.1.0
+info:
+  title: Runpod REST Billing Docs API
+  description: 'Runpod REST API for managing GPU pods, serverless endpoints, templates,
+
+    network volumes, container registry credentials, and billing data.
+
+    '
+  version: 1.0.0
+  contact:
+    name: Runpod API Reference
+    url: https://docs.runpod.io/api-reference/overview
+servers:
+- url: https://rest.runpod.io/v1
+  description: Runpod REST API production
+security:
+- bearerAuth: []
+tags:
+- name: Docs
+paths:
+  /docs:
+    get:
+      summary: Retrieve the interactive API documentation
+      operationId: getDocs
+      responses:
+        '200':
+          description: HTML documentation
+      tags:
+      - Docs
+components:
+  securitySchemes:
+    bearerAuth:
+      type: http
+      scheme: bearer
+      description: Runpod API key supplied as a bearer token.

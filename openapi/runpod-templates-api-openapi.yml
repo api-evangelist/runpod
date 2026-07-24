@@ -1,0 +1,89 @@
+openapi: 3.1.0
+info:
+  title: Runpod REST Billing Templates API
+  description: 'Runpod REST API for managing GPU pods, serverless endpoints, templates,
+
+    network volumes, container registry credentials, and billing data.
+
+    '
+  version: 1.0.0
+  contact:
+    name: Runpod API Reference
+    url: https://docs.runpod.io/api-reference/overview
+servers:
+- url: https://rest.runpod.io/v1
+  description: Runpod REST API production
+security:
+- bearerAuth: []
+tags:
+- name: Templates
+paths:
+  /templates:
+    get:
+      summary: List templates
+      operationId: listTemplates
+      responses:
+        '200':
+          description: List of templates
+      tags:
+      - Templates
+    post:
+      summary: Create a template
+      operationId: createTemplate
+      responses:
+        '201':
+          description: Template created
+      tags:
+      - Templates
+  /templates/{templateId}:
+    parameters:
+    - in: path
+      name: templateId
+      required: true
+      schema:
+        type: string
+    get:
+      summary: Get a template
+      operationId: getTemplate
+      responses:
+        '200':
+          description: Template details
+      tags:
+      - Templates
+    patch:
+      summary: Update a template
+      operationId: patchTemplate
+      responses:
+        '200':
+          description: Template updated
+      tags:
+      - Templates
+    delete:
+      summary: Delete a template
+      operationId: deleteTemplate
+      responses:
+        '204':
+          description: Template deleted
+      tags:
+      - Templates
+  /templates/{templateId}/update:
+    post:
+      summary: Apply a template update
+      operationId: updateTemplate
+      parameters:
+      - in: path
+        name: templateId
+        required: true
+        schema:
+          type: string
+      responses:
+        '200':
+          description: Template updated
+      tags:
+      - Templates
+components:
+  securitySchemes:
+    bearerAuth:
+      type: http
+      scheme: bearer
+      description: Runpod API key supplied as a bearer token.
