@@ -1,0 +1,28 @@
+{
+  "provider": "runpod",
+  "sources": [
+    "runpod-billing-api-openapi.yml",
+    "runpod-containerregistryauth-api-openapi.yml",
+    "runpod-docs-api-openapi.yml",
+    "runpod-endpoints-api-openapi.yml",
+    "runpod-networkvolumes-api-openapi.yml",
+    "runpod-openapi-json-api-openapi.yml",
+    "runpod-pods-api-openapi.yml",
+    "runpod-templates-api-openapi.yml"
+  ],
+  "outputs": [
+    "runpod-billing-api-openapi.yml",
+    "runpod-containerregistryauth-api-openapi.yml",
+    "runpod-docs-api-openapi.yml",
+    "runpod-endpoints-api-openapi.yml",
+    "runpod-networkvolumes-api-openapi.yml",
+    "runpod-openapi-json-api-openapi.yml",
+    "runpod-pods-api-openapi.yml",
+    "runpod-templates-api-openapi.yml"
+  ],
+  "archived": [],
+  "errors": [],
+  "warnings": [],
+  "notes": [],
+  "skipped": []
+}
