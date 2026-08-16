@@ -5,7 +5,7 @@
       "source": "https://www.runpod.io/blog/rss.xml",
       "feed_url": "https://www.runpod.io/blog/rss.xml",
       "title": "",
-      "saved": 0,
+      "saved": 13,
       "method": "feed"
     },
     {
@@ -13,9 +13,10 @@
       "feed_url": "https://www.runpod.io/pricing",
       "title": "",
       "saved": 0,
-      "method": "none"
+      "method": "none",
+      "error": "parse_failed"
     }
   ],
-  "post_count": 142,
-  "fetched": "2026-08-06T14:08:46Z"
+  "post_count": 155,
+  "fetched": "2026-08-15T12:11:08Z"
 }
