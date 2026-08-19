@@ -1,0 +1,190 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "Runpod REST Billing Pods API",
+    "version": "1.0.0"
+  },
+  "request": {
+    "auth": {
+      "type": "bearer",
+      "token": "{{bearerToken}}"
+    }
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Pods",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "List pods",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://rest.runpod.io/v1/pods"
+          },
+          "docs": "List pods"
+        },
+        {
+          "info": {
+            "name": "Create a pod",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://rest.runpod.io/v1/pods"
+          },
+          "docs": "Create a pod"
+        },
+        {
+          "info": {
+            "name": "Get a pod",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://rest.runpod.io/v1/pods/:podId",
+            "params": [
+              {
+                "name": "podId",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "Get a pod"
+        },
+        {
+          "info": {
+            "name": "Update a pod",
+            "type": "http"
+          },
+          "http": {
+            "method": "PATCH",
+            "url": "https://rest.runpod.io/v1/pods/:podId",
+            "params": [
+              {
+                "name": "podId",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "Update a pod"
+        },
+        {
+          "info": {
+            "name": "Delete a pod",
+            "type": "http"
+          },
+          "http": {
+            "method": "DELETE",
+            "url": "https://rest.runpod.io/v1/pods/:podId",
+            "params": [
+              {
+                "name": "podId",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "Delete a pod"
+        },
+        {
+          "info": {
+            "name": "Apply a pod update",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://rest.runpod.io/v1/pods/:podId/update",
+            "params": [
+              {
+                "name": "podId",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "Apply a pod update"
+        },
+        {
+          "info": {
+            "name": "Start a pod",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://rest.runpod.io/v1/pods/:podId/start",
+            "params": [
+              {
+                "name": "podId",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "Start a pod"
+        },
+        {
+          "info": {
+            "name": "Stop a pod",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://rest.runpod.io/v1/pods/:podId/stop",
+            "params": [
+              {
+                "name": "podId",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "Stop a pod"
+        },
+        {
+          "info": {
+            "name": "Reset a pod",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://rest.runpod.io/v1/pods/:podId/reset",
+            "params": [
+              {
+                "name": "podId",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "Reset a pod"
+        },
+        {
+          "info": {
+            "name": "Restart a pod",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://rest.runpod.io/v1/pods/:podId/restart",
+            "params": [
+              {
+                "name": "podId",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "Restart a pod"
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}

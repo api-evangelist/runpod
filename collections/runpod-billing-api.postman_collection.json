@@ -1,0 +1,242 @@
+{
+  "item": [
+    {
+      "id": "944af1d6-fdf8-437e-88af-8328bf46eb84",
+      "name": "Billing",
+      "description": {
+        "content": "",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "6ac4950b-ac46-4137-b2ed-5435528576d2",
+          "name": "Retrieve billing data for pods",
+          "request": {
+            "name": "Retrieve billing data for pods",
+            "description": {},
+            "url": {
+              "path": [
+                "billing",
+                "pods"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "1a12cc47-5b78-4d80-9688-6d1b628a6a73",
+              "name": "Pod billing data",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "billing",
+                    "pods"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: bearer",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "Bearer <token>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "dadb88dc-b2df-4eb4-aa65-95d87fb184f2",
+          "name": "Retrieve billing data for serverless endpoints",
+          "request": {
+            "name": "Retrieve billing data for serverless endpoints",
+            "description": {},
+            "url": {
+              "path": [
+                "billing",
+                "endpoints"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "e0ba808b-1d98-4b4c-970c-896a12c56696",
+              "name": "Endpoint billing data",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "billing",
+                    "endpoints"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: bearer",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "Bearer <token>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "cf2699c8-0ecf-4cf1-9fc6-8719c277c558",
+          "name": "Retrieve billing data for network volumes",
+          "request": {
+            "name": "Retrieve billing data for network volumes",
+            "description": {},
+            "url": {
+              "path": [
+                "billing",
+                "networkvolumes"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "4c06136b-20d0-4505-8fdf-185357f8aa07",
+              "name": "Network volume billing data",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "billing",
+                    "networkvolumes"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: bearer",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "Bearer <token>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    }
+  ],
+  "event": [],
+  "variable": [
+    {
+      "type": "string",
+      "value": "https://rest.runpod.io/v1",
+      "key": "baseUrl"
+    }
+  ],
+  "auth": {
+    "type": "bearer",
+    "bearer": [
+      {
+        "key": "token",
+        "value": "{{bearerToken}}"
+      }
+    ]
+  },
+  "info": {
+    "_postman_id": "6aa525ad-11c5-44f7-a0ee-8b5aa2dadb87",
+    "name": "Runpod REST Billing API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "Runpod REST API for managing GPU pods, serverless endpoints, templates,\nnetwork volumes, container registry credentials, and billing data.\n\n\nContact Support:\n Name: Runpod API Reference",
+      "type": "text/plain"
+    }
+  }
+}

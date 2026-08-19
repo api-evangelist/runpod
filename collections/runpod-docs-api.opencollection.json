@@ -1,0 +1,35 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "Runpod REST Billing Docs API",
+    "version": "1.0.0"
+  },
+  "request": {
+    "auth": {
+      "type": "bearer",
+      "token": "{{bearerToken}}"
+    }
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Docs",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Retrieve the interactive API documentation",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://rest.runpod.io/v1/docs"
+          },
+          "docs": "Retrieve the interactive API documentation"
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}

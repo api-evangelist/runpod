@@ -1,0 +1,118 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "Runpod REST Billing Endpoints API",
+    "version": "1.0.0"
+  },
+  "request": {
+    "auth": {
+      "type": "bearer",
+      "token": "{{bearerToken}}"
+    }
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Endpoints",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "List serverless endpoints",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://rest.runpod.io/v1/endpoints"
+          },
+          "docs": "List serverless endpoints"
+        },
+        {
+          "info": {
+            "name": "Create a serverless endpoint",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://rest.runpod.io/v1/endpoints"
+          },
+          "docs": "Create a serverless endpoint"
+        },
+        {
+          "info": {
+            "name": "Get a serverless endpoint",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://rest.runpod.io/v1/endpoints/:endpointId",
+            "params": [
+              {
+                "name": "endpointId",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "Get a serverless endpoint"
+        },
+        {
+          "info": {
+            "name": "Update a serverless endpoint",
+            "type": "http"
+          },
+          "http": {
+            "method": "PATCH",
+            "url": "https://rest.runpod.io/v1/endpoints/:endpointId",
+            "params": [
+              {
+                "name": "endpointId",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "Update a serverless endpoint"
+        },
+        {
+          "info": {
+            "name": "Delete a serverless endpoint",
+            "type": "http"
+          },
+          "http": {
+            "method": "DELETE",
+            "url": "https://rest.runpod.io/v1/endpoints/:endpointId",
+            "params": [
+              {
+                "name": "endpointId",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "Delete a serverless endpoint"
+        },
+        {
+          "info": {
+            "name": "Apply an endpoint update",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://rest.runpod.io/v1/endpoints/:endpointId/update",
+            "params": [
+              {
+                "name": "endpointId",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "Apply an endpoint update"
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}

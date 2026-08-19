@@ -1,0 +1,57 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "Runpod REST Billing API",
+    "version": "1.0.0"
+  },
+  "request": {
+    "auth": {
+      "type": "bearer",
+      "token": "{{bearerToken}}"
+    }
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Billing",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Retrieve billing data for pods",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://rest.runpod.io/v1/billing/pods"
+          },
+          "docs": "Retrieve billing data for pods"
+        },
+        {
+          "info": {
+            "name": "Retrieve billing data for serverless endpoints",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://rest.runpod.io/v1/billing/endpoints"
+          },
+          "docs": "Retrieve billing data for serverless endpoints"
+        },
+        {
+          "info": {
+            "name": "Retrieve billing data for network volumes",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://rest.runpod.io/v1/billing/networkvolumes"
+          },
+          "docs": "Retrieve billing data for network volumes"
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}

@@ -1,0 +1,118 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "Runpod REST Billing Networkvolumes API",
+    "version": "1.0.0"
+  },
+  "request": {
+    "auth": {
+      "type": "bearer",
+      "token": "{{bearerToken}}"
+    }
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Networkvolumes",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "List network volumes",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://rest.runpod.io/v1/networkvolumes"
+          },
+          "docs": "List network volumes"
+        },
+        {
+          "info": {
+            "name": "Create a network volume",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://rest.runpod.io/v1/networkvolumes"
+          },
+          "docs": "Create a network volume"
+        },
+        {
+          "info": {
+            "name": "Get a network volume",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://rest.runpod.io/v1/networkvolumes/:networkVolumeId",
+            "params": [
+              {
+                "name": "networkVolumeId",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "Get a network volume"
+        },
+        {
+          "info": {
+            "name": "Update a network volume",
+            "type": "http"
+          },
+          "http": {
+            "method": "PATCH",
+            "url": "https://rest.runpod.io/v1/networkvolumes/:networkVolumeId",
+            "params": [
+              {
+                "name": "networkVolumeId",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "Update a network volume"
+        },
+        {
+          "info": {
+            "name": "Delete a network volume",
+            "type": "http"
+          },
+          "http": {
+            "method": "DELETE",
+            "url": "https://rest.runpod.io/v1/networkvolumes/:networkVolumeId",
+            "params": [
+              {
+                "name": "networkVolumeId",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "Delete a network volume"
+        },
+        {
+          "info": {
+            "name": "Apply a network volume update",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://rest.runpod.io/v1/networkvolumes/:networkVolumeId/update",
+            "params": [
+              {
+                "name": "networkVolumeId",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "Apply a network volume update"
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}

@@ -1,0 +1,82 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "Runpod REST Billing Containerregistryauth API",
+    "version": "1.0.0"
+  },
+  "request": {
+    "auth": {
+      "type": "bearer",
+      "token": "{{bearerToken}}"
+    }
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Containerregistryauth",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "List container registry auth entries",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://rest.runpod.io/v1/containerregistryauth"
+          },
+          "docs": "List container registry auth entries"
+        },
+        {
+          "info": {
+            "name": "Create container registry auth entry",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://rest.runpod.io/v1/containerregistryauth"
+          },
+          "docs": "Create container registry auth entry"
+        },
+        {
+          "info": {
+            "name": "Get a container registry auth entry",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://rest.runpod.io/v1/containerregistryauth/:containerRegistryAuthId",
+            "params": [
+              {
+                "name": "containerRegistryAuthId",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "Get a container registry auth entry"
+        },
+        {
+          "info": {
+            "name": "Delete a container registry auth entry",
+            "type": "http"
+          },
+          "http": {
+            "method": "DELETE",
+            "url": "https://rest.runpod.io/v1/containerregistryauth/:containerRegistryAuthId",
+            "params": [
+              {
+                "name": "containerRegistryAuthId",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "Delete a container registry auth entry"
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}
