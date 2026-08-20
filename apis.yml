@@ -23,6 +23,14 @@ type: Index
 access: 3rd-Party
 position: Producer
 tags:
+- Artificial Intelligence
+- Cloud
+- Compute
+- GPU
+- Inference
+- Machine-Learning
+- Serverless
+tags_raw:
 - AI
 - Cloud
 - Compute
@@ -61,6 +69,13 @@ apis:
   humanURL: https://docs.runpod.io/serverless/overview
   baseURL: https://api.runpod.ai/v2
   tags:
+  - Artificial Intelligence
+  - Auto-Scaling
+  - GPU
+  - Inference
+  - Serverless
+  - Workers
+  tags_raw:
   - AI
   - Autoscaling
   - GPU
@@ -111,7 +126,8 @@ apis:
   description: The Endpoints API from RunPod — 3 operation(s) for endpoints.
   humanURL: https://docs.runpod.io/api-reference/overview
   baseURL: https://rest.runpod.io/v1
-  tags:
+  tags: []
+  tags_raw:
   - Endpoints
   properties:
   - type: OpenAPI
@@ -124,6 +140,8 @@ apis:
   humanURL: https://docs.runpod.io/api-reference/overview
   baseURL: https://rest.runpod.io/v1
   tags:
+  - Network Volumes
+  tags_raw:
   - Networkvolumes
   properties:
   - type: OpenAPI
