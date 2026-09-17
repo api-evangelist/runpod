@@ -147,20 +147,6 @@ apis:
     url: openapi/runpod-endpoints-api-openapi.yml
   - type: Documentation
     url: https://docs.runpod.io/api-reference/overview
-- aid: runpod:runpod-networkvolumes-api
-  name: RunPod Networkvolumes API
-  description: The Networkvolumes API from RunPod — 3 operation(s) for networkvolumes.
-  humanURL: https://docs.runpod.io/api-reference/overview
-  baseURL: https://rest.runpod.io/v1
-  tags:
-  - Network Volumes
-  tags_raw:
-  - Networkvolumes
-  properties:
-  - type: OpenAPI
-    url: openapi/runpod-networkvolumes-api-openapi.yml
-  - type: Documentation
-    url: https://docs.runpod.io/api-reference/overview
 - aid: runpod:runpod-openapi-json-api
   name: RunPod Openapi.json API
   description: The Openapi.json API from RunPod — 1 operation(s) for openapi.json.
@@ -195,6 +181,18 @@ apis:
   properties:
   - type: OpenAPI
     url: openapi/runpod-templates-api-openapi.yml
+  - type: Documentation
+    url: https://docs.runpod.io/api-reference/overview
+- aid: runpod:runpod-network-volumes-api
+  name: RunPod Network Volumes API
+  description: The Network Volumes API from RunPod — 3 operation(s) for network volumes.
+  humanURL: https://docs.runpod.io/sdks/graphql/configurations
+  baseURL: https://api.runpod.io/graphql
+  tags:
+  - Network Volumes
+  properties:
+  - type: OpenAPI
+    url: openapi/runpod-network-volumes-api-openapi.yml
   - type: Documentation
     url: https://docs.runpod.io/api-reference/overview
 common:
