@@ -197,6 +197,8 @@ apis:
   - type: Documentation
     url: https://docs.runpod.io/api-reference/overview
 common:
+- type: Plans
+  url: plans/runpod-plans-pricing.yml
 - type: AgenticAccess
   url: agentic-access/runpod-agentic-access.yml
 - type: TrustCenter
