@@ -41,18 +41,6 @@
   relationship: system-coverage
   status: not-a-workflow
   arazzo: null
-- slug: runpod-n8n-n8n-community
-  label: n8n (n8n-community)
-  partner: n8n
-  partner_name: n8n (n8n-community)
-  type: marketplace
-  marketplace: n8n-community
-  channel: partner-built
-  evidence: https://www.npmjs.com/package/n8n-nodes-runpod-public-endpoints
-  source: edge
-  relationship: platform-app
-  status: not-a-workflow
-  arazzo: null
 - slug: runpod-agent-skills-own-github-org
   label: Agent Skills (own GitHub org)
   partner_name: Agent Skills (own GitHub org)
@@ -97,5 +85,43 @@
     - endpoint-ops
     detected_by: sweep-agent-skills.py
     detected: '2026-10-20'
+  status: not-a-workflow
+  arazzo: null
+- slug: runpod-n8n-n8n-community
+  label: n8n (n8n-community)
+  partner: n8n
+  partner_name: n8n (n8n-community)
+  type: marketplace
+  marketplace: n8n-community
+  channel: partner-built
+  evidence: https://www.npmjs.com/package/n8n-nodes-runpod-public-endpoints
+  source: edge
+  relationship: platform-app
+  status: not-a-workflow
+  arazzo: null
+- slug: runpod-pulumi-pulumi-registry
+  label: Pulumi (pulumi-registry)
+  partner: pulumi
+  partner_name: Pulumi (pulumi-registry)
+  category: infrastructure-as-code provider registry listing
+  type: marketplace
+  marketplace: pulumi-registry
+  channel: partner-built
+  evidence: https://www.pulumi.com/registry/packages/runpod/
+  source: edge
+  relationship: platform-app
+  status: not-a-workflow
+  arazzo: null
+- slug: runpod-terraform-terraform-registry
+  label: Terraform (terraform-registry)
+  partner: terraform
+  partner_name: Terraform (terraform-registry)
+  category: infrastructure-as-code provider registry listing
+  type: marketplace
+  marketplace: terraform-registry
+  channel: partner-built
+  evidence: https://registry.terraform.io/providers/runpod/runpod
+  source: edge
+  relationship: platform-app
   status: not-a-workflow
   arazzo: null
