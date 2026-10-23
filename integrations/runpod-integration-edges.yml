@@ -196,6 +196,40 @@ edges:
       P856 not contradicting (Kin 2026-10-20 decision 2)
   detected_by: sweep-github-marketplace.py
   first_seen: '2026-10-21'
+- partner_name: Arch User Repository (AUR)
+  partner: null
+  partner_match: null
+  type: register
+  direction: provider-built
+  category: official CLI (Arch User Repository (AUR))
+  evidence: https://aur.archlinux.org/packages/runpodctl-git
+  channel: package-registry
+  relationship: distribution-channel
+  contract_reference:
+    register: Arch User Repository (AUR) (public package index)
+    spec_file: null
+    packages:
+    - name: runpodctl-git
+      kind: aur
+      version: 1.14.4.r13.gb508558-1
+      released: '2025-05-14'
+      released_field: AUR LastModified
+      out_of_date: false
+      lapsed: false
+      page: https://aur.archlinux.org/packages/runpodctl-git
+      upstream: https://github.com/runpod/runpodctl
+      cli: 'AUR description: CLI tool to automate / manage GPU pods for runpod.io'
+      repo_leg: github-org:runpod
+      publisher_leg: artifact-github-org:runpod
+      matched_by: github-org
+    current: true
+    signal_note: 'the provider''s own command-line tool packaged for Arch Linux (community-maintained PKGBUILD whose
+      upstream and source artifact are the provider''s): distribution, not an integration; lapsed = flagged out-of-date
+      or not updated in 24 months'
+    detected_by: sweep-aur-vendor-cli-packages.py
+    detected: '2026-10-23'
+  detected_by: sweep-aur-vendor-cli-packages.py
+  first_seen: '2026-10-23'
 generated: '2026-10-13'
 method: searched
 checked:
@@ -218,5 +252,8 @@ checked:
 - https://github.com/marketplace?type=apps
 - https://github.com/partners/technology-partners
 - https://partner.github.com/
+- https://aur.archlinux.org/cgit/aur.git/tree/.SRCINFO
+- https://aur.archlinux.org/packages-meta-ext-v1.json.gz
+- https://aur.archlinux.org/rpc/v5/info
 source:
 - https://registry.npmjs.org/-/v1/search?text=keywords:n8n-community-node-package
