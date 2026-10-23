@@ -113,55 +113,6 @@ edges:
     detected: '2026-10-20'
   detected_by: sweep-agent-skills.py
   first_seen: '2026-10-20'
-- partner_name: n8n (n8n-community)
-  partner: n8n
-  partner_match: mirror
-  mirror_match: domain
-  type: marketplace
-  relationship: platform-app
-  direction: third-party
-  channel: partner-built
-  marketplace: n8n-community
-  evidence: https://www.npmjs.com/package/n8n-nodes-runpod-public-endpoints
-  mirror_of: n8n/integrations/n8n-integration-edges.yml
-  apps: []
-  listing_count: 1
-  detected: '2026-10-19'
-  detected_by: mirror-platform-listings.py
-- partner_name: Pulumi (pulumi-registry)
-  partner: pulumi
-  partner_match: mirror
-  mirror_match: register
-  type: marketplace
-  relationship: platform-app
-  direction: third-party
-  channel: partner-built
-  marketplace: pulumi-registry
-  evidence: https://www.pulumi.com/registry/packages/runpod/
-  mirror_of: pulumi/integrations/pulumi-integration-edges.yml
-  apps:
-  - Runpod
-  listing_count: 1
-  detected: '2026-10-21'
-  detected_by: mirror-platform-listings.py
-  category: infrastructure-as-code provider registry listing
-- partner_name: Terraform (terraform-registry)
-  partner: terraform
-  partner_match: mirror
-  mirror_match: register
-  type: marketplace
-  relationship: platform-app
-  direction: third-party
-  channel: partner-built
-  marketplace: terraform-registry
-  evidence: https://registry.terraform.io/providers/runpod/runpod
-  mirror_of: terraform/integrations/terraform-integration-edges.yml
-  apps:
-  - runpod/runpod
-  listing_count: 1
-  detected: '2026-10-21'
-  detected_by: mirror-platform-listings.py
-  category: infrastructure-as-code provider registry listing
 - partner_name: GitHub secret scanning partner program
   partner: github
   partner_match: register-name
@@ -230,6 +181,78 @@ edges:
     detected: '2026-10-23'
   detected_by: sweep-aur-vendor-cli-packages.py
   first_seen: '2026-10-23'
+- partner_name: n8n (n8n-community)
+  partner: n8n
+  partner_match: mirror
+  mirror_match: domain
+  type: marketplace
+  relationship: platform-app
+  direction: third-party
+  channel: partner-built
+  marketplace: n8n-community
+  evidence: https://www.npmjs.com/package/n8n-nodes-runpod-public-endpoints
+  mirror_of: n8n/integrations/n8n-integration-edges.yml
+  apps: []
+  listing_count: 1
+  detected: '2026-10-19'
+  detected_by: mirror-platform-listings.py
+- partner_name: Pulumi (pulumi-registry)
+  partner: pulumi
+  partner_match: mirror
+  mirror_match: register
+  type: marketplace
+  relationship: platform-app
+  direction: third-party
+  channel: partner-built
+  marketplace: pulumi-registry
+  evidence: https://www.pulumi.com/registry/packages/runpod/
+  mirror_of: pulumi/integrations/pulumi-integration-edges.yml
+  apps:
+  - Runpod
+  listing_count: 1
+  detected: '2026-10-21'
+  detected_by: mirror-platform-listings.py
+  category: infrastructure-as-code provider registry listing
+- partner_name: Terraform (terraform-registry)
+  partner: terraform
+  partner_match: mirror
+  mirror_match: register
+  type: marketplace
+  relationship: platform-app
+  direction: third-party
+  channel: partner-built
+  marketplace: terraform-registry
+  evidence: https://registry.terraform.io/providers/runpod/runpod
+  mirror_of: terraform/integrations/terraform-integration-edges.yml
+  apps:
+  - runpod/runpod
+  listing_count: 1
+  detected: '2026-10-21'
+  detected_by: mirror-platform-listings.py
+  category: infrastructure-as-code provider registry listing
+- partner_name: Hugging Face (hugging-face-hub)
+  partner: hugging-face
+  partner_match: mirror
+  mirror_match: domain
+  type: marketplace
+  relationship: platform-app
+  direction: third-party
+  channel: partner-built
+  marketplace: hugging-face-hub
+  evidence: https://huggingface.co/Runpod
+  mirror_of: hugging-face/integrations/hugging-face-integration-edges.yml
+  apps:
+  - Runpod/testpublicdataset
+  - Runpod/FLUX.2-klein-4B-mflux-4bit
+  - Runpod/testpublicmodel
+  - Runpod/testpublicmodelcharacter
+  - Runpod
+  listing_count: 3
+  detected: '2026-10-23'
+  detected_by: mirror-platform-listings.py
+  category: Hugging Face Hub datasets
+  badges:
+  - Verified publisher (Hugging Face verified organisation)
 generated: '2026-10-13'
 method: searched
 checked:
@@ -255,5 +278,6 @@ checked:
 - https://aur.archlinux.org/cgit/aur.git/tree/.SRCINFO
 - https://aur.archlinux.org/packages-meta-ext-v1.json.gz
 - https://aur.archlinux.org/rpc/v5/info
+- hugging-face/integrations/hugging-face-integration-edges.yml
 source:
 - https://registry.npmjs.org/-/v1/search?text=keywords:n8n-community-node-package
