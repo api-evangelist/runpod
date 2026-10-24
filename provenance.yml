@@ -64,135 +64,21 @@ artifacts:
     method: derived
     evidence: openapi/runpod
   finops/runpod-finops.yml:
-    method: unknown
-    evidence: no authorship recorded
+    method: generated
+    evidence: declared in the artifact
   front-door-ai/2026-09-17.yml:
     method: unknown
     evidence: no authorship recorded
   graphql/runpod-graphql.md:
     method: unknown
     evidence: no authorship recorded
-  kin/checks-2026-09-24T161608.yml:
+  integrations/_index.yml:
     method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-08-25T125852.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-08-25T133943.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-08-25T143147.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-08-25T154045.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-08-26T215308.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-08-27T094438.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-08-27T103455.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-08-27T123021.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-08-27T132314.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-08-27T140727.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-08-28T221322.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-08-29T213958.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-08-29T230545.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-08-30T203505.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-08-30T220315.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-08-31T223420.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-09-01T063623.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-09-01T210448.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-09-01T222808.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-09-02T211804.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-09-02T224043.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-09-03T161828.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-09-03T174231.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-09-04T062714.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-09-04T212454.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-09-04T224856.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-09-05T055819.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-09-05T072335.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-09-05T144739.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-09-05T195450.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-09-05T211839.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-09-06T011047.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-09-06T211804.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-09-06T224210.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-09-07T200636.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-09-07T213054.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-09-08T214843.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-09-08T232836.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-09-10T204815.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-09-10T222408.yml:
+    evidence: carries an API Evangelist house phrase
+  integrations/runpod-integration-edges.yml:
+    method: unknown
+    evidence: no authorship recorded
+  kin/checks-2026-10-11T110117.yml:
     method: generated
     evidence: Kin Score snapshot written by score.rb
   kin/score-2026-09-12T062655.yml:
@@ -276,6 +162,21 @@ artifacts:
   kin/score-2026-09-24T161608.yml:
     method: generated
     evidence: Kin Score snapshot written by score.rb
+  kin/score-2026-09-25T210408.yml:
+    method: generated
+    evidence: Kin Score snapshot written by score.rb
+  kin/score-2026-09-25T232841.yml:
+    method: generated
+    evidence: Kin Score snapshot written by score.rb
+  kin/score-2026-10-03T000835.yml:
+    method: generated
+    evidence: Kin Score snapshot written by score.rb
+  kin/score-2026-10-03T024842.yml:
+    method: generated
+    evidence: Kin Score snapshot written by score.rb
+  kin/score-2026-10-11T110117.yml:
+    method: generated
+    evidence: Kin Score snapshot written by score.rb
   llms/runpod-llms.txt:
     method: searched
     evidence: 'derive-llms-provenance.py: harvested'
@@ -284,8 +185,8 @@ artifacts:
     evidence: no authorship recorded
   openapi/_original/runpod-openapi.yml:
     method: harvested
-    evidence: found in openapi/_original/; the fetch URL and bytes were not recorded, so byte-identity
-      to the provider's source is unverified
+    evidence: the same operations as https://mintlify-s3-bucket-3cc1a52.s3.us-east-1.amazonaws.com/696be06d-7d37-43a0-8a3d-7fe2c1bdae8c?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAULUIU2DMO3IOYD3X%2F20261004%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20261004T224016Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEAYaCXVzLWVhc3QtMSJHMEUCIQDlc6C185LeEojXkEx9bOSzaRixQmoQO3mftrQNEma8CAIgEV6QZ3Tdrsw5%2BaULTXUE1%2BIaSAOqt0SD%2FxQKtNUlp4sqlgQIzv%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FARABGgwyOTk4NjA1NDU3NTIiDBJTbNC13vodkj%2BHqSrqA8m903U4WnB3SP0lzeBD9yDzxHboC7mfamCT2d1Sw8Xrwu7MEF0llk6GPaZ3Aa9CDto0ELgbOhBOxCiQjnp0kQ3dZfb%2FUWdLedKOeyx%2F2Lz0tiFFiReou%2B4LLSeBcRSshGe9xlhzoHc7eh4K%2BobHXs%2FSMxBUCzOj3PpJswh6ooLCsJ4uLkWlb9HRX24PYrnX36jASip3BbK%2F5th9YmzNKSF0t3Flwm6fhwyHeG%2FH2e6wigY%2FfpHydx2q5mXYql61jjMwivxsPLnUvdVXjyCRgtvgACuEX1cP2y66X3r%2FW6Jf%2FBRDJHEjt9X6RSG4QQtWLH5YEuopVDoAxQ%2FYwxpbE3ynejZf%2Fr9ZtALEjmCR1owQF4ReLY5tYVwC4N2hfthnUipoBWTgOVnH2ogCA5gHqgaNEwDugQjwMXACgZRtRqqQiIGnWOvxj3qRW%2BkfIJWbgRHRfN67coekFWqsxQHBDWM5f4r%2BKaUH%2B3Bn8AloxWmld1%2Ft%2FBccWQOCYtTQ%2BiBNCpMJggmYhzUtwfjtVtNMelWEft4d567YI5jmLaQ6MvSQWJuNh3vbIH%2FaZSmZu7U%2FcnNkmCQb4rylUm1SDIxnV4lKWgMg1%2FVS3txQ%2BPPJBNilalOwaP8RNME6xaw%2BKOextmcw8URk1OFVBH8wxJaL1gY6pQFWs5C4Bvx%2F0IsYyglGVgr9lBrv4WlUCbes0JrtPUteW5yz%2FmMLYK6xXt0VpDvaVEH34ETCPz%2B7nAVa9AO3v4zJBIPVU5sGLc11PeOiGIoNeCbpBrjmdMsWpUI9FIeNoyNygNYZwmvtFItX1gzBSPRLtxX3ugHgCp0QY1gOujlQlG2WnS8sJGcv%2Fb0LKMYvZgYpZbyM0DeygQ9HIeeTI53Zi%2Fsxv8o%3D&X-Amz-Signature=23988801c01fee44381cbe3bd96bd4430f04d49b944cc4e1d6f28b634ae96646&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject
+      (sha256 65390feb379f, fetched 2026-10-04)
   openapi/runpod-billing-api-openapi.yml:
     method: derived
     evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
@@ -311,11 +212,11 @@ artifacts:
     method: derived
     evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
   plans/runpod-plans-pricing.yml:
-    method: unknown
-    evidence: no authorship recorded
+    method: searched
+    evidence: declared in the artifact
   rate-limits/runpod-rate-limits.yml:
-    method: unknown
-    evidence: no authorship recorded
+    method: generated
+    evidence: declared in the artifact
   security/runpod-domain-security.yml:
     method: unknown
     evidence: no authorship recorded
